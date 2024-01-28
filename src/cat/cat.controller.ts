@@ -20,4 +20,10 @@ export class CatController {
     console.log('getRandomCatImage');
     return this.catService.getRandomCatImage();
   }
+
+  @Get('/detail')
+  getCatDetail() {
+    console.log('getCatDetail');
+    return this.catService.getCatDetail();
+  }
 }
